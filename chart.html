@@ -1,0 +1,57 @@
+</script><canvas id="myCanvas" width="550" height="300" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ct1 = c.getContext("2d");
+var ct2 = c.getContext("2d");
+var ct3 = c.getContext("2d");
+var ct4 = c.getContext("2d");
+
+var a=100; //Quantity 1
+var b=50; //Qunatity 2
+var c=30; //Qunatity 3
+var d=20; // Qunatity 4
+
+ct1.beginPath(); // circle for quantity 1 
+ct1.arc(200, 300-a, a, 0, 2 * Math.PI);
+ct1.moveTo(350,290);
+ct1.rect(350,270,25,20); //color legend for quantity 1
+ct1.fillStyle = "blue";
+ct1.fill();
+ct1.font ="15px Arial";
+ct1.textBaseline = "middle"; 
+ct1.fillText("Quantity 1", 390, 280); //legend text for quantity 1
+ct1.stroke();
+
+ct2.beginPath();
+ct2.arc(200, 300-b, b, 0, 2 * Math.PI);
+ct2.rect(350,240,25,20);
+ct2.fillStyle = "red";
+ct2.fill();
+ct2.font ="15px Arial";
+ct2.textBaseline = "middle";
+ct2.fillText("Quantity 2", 390, 250);
+ct2.stroke();
+
+ct3.beginPath();
+ct3.arc(200, 300-c, c, 0, 2 * Math.PI);
+ct3.rect(350,210,25,20);
+ct3.fillStyle = "gray";
+ct3.fill();
+ct3.font ="15px Arial";
+ct3.textBaseline = "middle";
+ct3.fillText("Quantity 3", 390, 220);
+ct3.stroke();
+
+ct4.beginPath();
+ct4.arc(200, 300-d, d, 0, 2 * Math.PI);
+ct4.rect(350,180,25,20);
+ct4.fillStyle = "green";
+ct4.fill();
+ct4.font ="15px Arial";
+ct4.textBaseline = "middle";
+ct4.fillText("Quantity 4", 390, 190);
+ct4.stroke();
+
+</script>
